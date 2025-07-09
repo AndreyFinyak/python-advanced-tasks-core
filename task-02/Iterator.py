@@ -10,6 +10,7 @@ class Iterator:
         else:
             self.iterator = iter(range(*args))
 
+    @classmethod
     def is_prime(self, n: int) -> bool:
         if n < 2:
             return False
